@@ -1,0 +1,29 @@
+<?php
+/**
+ * The template used for displaying page content in page.php
+ *
+ * @package Material Design
+ */
+
+?>
+<div class="mdl-layout__tab-panel is-active">
+	<section id="post-<?php the_ID(); ?>" <?php post_class( 'section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp' ); ?>>
+		<header class="entry-header">
+			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		</header><!-- .entry-header -->
+
+		<div class="entry-content">
+			<?php the_content(); ?>
+			<?php
+				wp_link_pages( array(
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'material-design' ),
+					'after'  => '</div>',
+				) );
+			?>
+		</div><!-- .entry-content -->
+
+		<footer class="entry-footer">
+			<?php edit_post_link( esc_html__( 'Edit', 'material-design' ), '<span class="edit-link">', '</span>' ); ?>
+		</footer><!-- .entry-footer -->
+	</section><!-- #post-## -->
+</div>
