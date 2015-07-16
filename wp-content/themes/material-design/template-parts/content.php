@@ -37,10 +37,11 @@
 					?>
 				</div><!-- .entry-content -->
 
-				<footer class="entry-footer">
+				
+			</div>
+			<footer class="entry-footer mdl-card__actions">
 					<?php material_design_entry_footer(); ?>
 				</footer><!-- .entry-footer -->
-			</div>
 		</div>
 	</section><!-- #post-## -->
 </div>

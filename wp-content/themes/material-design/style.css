@@ -6844,7 +6844,7 @@ ul, ol {
     padding: 0; }
   .mdl-layout.is-upgraded .mdl-layout__tab.is-active {
     color: rgb(255,255,255); }
-  .mdl-layout.is-upgraded .mdl-layout__tab.is-active::after {
+  .mdl-layout.is-upgraded .mdl-layout__tab.is-active::after, .main-navigation ul li.current-menu-item::after {
     height: 2px;
     width: 100%;
     display: block;
@@ -9720,7 +9720,7 @@ iframe.heightSet {
  */
 
 html, body {
-  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-family: 'Roboto', 'Helvetica', sans-serif !important;
   margin: 0;
   padding: 0;
 }
@@ -9759,7 +9759,7 @@ html, body {
   height: 64px;
   line-height: 64px;
 }
-.mdl-demo .mdl-layout__tab-bar .mdl-layout__tab.is-active::after {
+.mdl-demo .mdl-layout__tab-bar .mdl-layout__tab.is-active::after, .main-navigation ul li.current-menu-item::after {
   background-color: white;
   height: 4px;
 }
@@ -9961,3 +9961,50 @@ html, body {
 .mdl-demo .mdl-menu__container {
   z-index: 99;
 }
+
+
+/* ==========  $WP-WORDPRESS  ========== */
+
+/* ==========  $WP-HEADER  ========== */
+
+.site-branding .site-title a {
+	color: #fff;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+/* ==========  $WP-NAVIGATION  ========== */
+
+.main-navigation ul {
+	list-style: none;
+	display: inline;
+}
+
+.main-navigation ul li {
+	height: 64px;
+	line-height: 64px;
+	margin: 0;
+	border: none;
+	padding: 0 24px;
+	float: left;
+	position: relative;
+	text-align: center;
+	font-weight: 500;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.main-navigation ul li a {
+	color: rgba(255,255,255,.6);
+	text-decoration: none;
+}
+
+.main-navigation ul li.current-menu-item a {
+	color: #fff;
+}
+
+/* ==========  $WP-CONTENT  ========== */
+
+/* ==========  $WP-COMMENTS  ========== */
+
+/* ==========  $WP-FOOTER  ========== */

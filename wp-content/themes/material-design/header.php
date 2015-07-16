@@ -18,7 +18,7 @@
 <?php wp_head(); ?>
 <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
- <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.blue_grey-orange.min.css" />  
+<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.blue_grey-orange.min.css" />  
 </head>
 
 <body <?php body_class( 'mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base' ); ?>>
@@ -36,7 +36,7 @@
 
 			<div class="mdl-layout__tab-bar-container">
 				<nav id="site-navigation" class="main-navigation mdl-layout--large-screen-only mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark mdl-js-ripple-effect--ignore-events" role="navigation" data-upgraded=",MaterialRipple">
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'link_after' => '<span class="mdl-layout__tab-ripple-container mdl-js-ripple-effect" data-upgraded=",MaterialRipple"><span class="mdl-ripple is-animating" style="width: 268.063079926547px; height: 268.063079926547px; -webkit-transform: translate(-50%, -50%) translate(87px, 32px); transform: translate(-50%, -50%) translate(87px, 32px);"></span></span>' ) ); ?>
 				</nav><!-- #site-navigation -->
 			</div>
 		</header><!-- #masthead -->
