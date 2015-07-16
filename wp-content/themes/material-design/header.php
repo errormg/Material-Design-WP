@@ -53,4 +53,4 @@
 	    </nav>
 	  </div>
 
-		<main id="content" class="site-content mdl-layout__content">
+		<div id="content" class="site-content mdl-layout__content">
