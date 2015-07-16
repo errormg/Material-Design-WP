@@ -18,7 +18,9 @@
 <?php wp_head(); ?>
 <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.blue_grey-orange.min.css" />  
+<!-- <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.blue_grey-orange.min.css" /> -->
+<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.deep_purple-pink.min.css" /> 
+
 </head>
 
 <body <?php body_class( 'mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base' ); ?>>
@@ -30,7 +32,7 @@
 			<div class="mdl-layout--large-screen-only mdl-layout__header-row"></div>
 			<div class="site-branding mdl-layout__header-row">
 				<h3 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h3>
-				<!-- <p class="site-description"><?php bloginfo( 'description' ); ?></p>-->
+				<!--<p class="site-description"><?php bloginfo( 'description' ); ?></p>-->
 			</div><!-- .site-branding -->
 			<div class="mdl-layout--large-screen-only mdl-layout__header-row"></div>
 

@@ -9701,6 +9701,116 @@ iframe.heightSet {
   .demo-wrapper iframe {
     border: 1px solid rgba(0, 0, 0, 0.5); }
 
+
+
+
+/* ==========  $WP-WORDPRESS-BEGIN  ========== */
+
+/* ==========  $WP-HEADER  ========== */
+
+.site-branding .site-title {
+	width: 100%;
+}
+
+.site-branding .site-title a {
+	color: #fff;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+/* ==========  $WP-NAVIGATION  ========== */
+
+.main-navigation ul {
+	list-style: none;
+	display: inline;
+}
+
+.main-navigation ul li {
+	height: 64px;
+	line-height: 64px;
+	margin: 0;
+	border: none;
+	padding: 0 24px;
+	float: left;
+	position: relative;
+	text-align: center;
+	font-weight: 500;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.main-navigation ul li a {
+	color: rgba(255,255,255,.6);
+	text-decoration: none;
+}
+
+.main-navigation ul li.current-menu-item a {
+	color: #fff;
+}
+
+/* ==========  $WP-CONTENT  ========== */
+
+/* $WP-ENTRY-HEADER */
+
+.entry-title a, .entry-meta .posted-on a, .entry-meta .byline a  {
+	color: #616161 !important;
+	text-decoration: none;
+}
+
+/* $WP-ENTRY-FOOTER */
+
+.entry-footer .comments-link a {
+	background: transparent;
+	border: none;
+	border-radius: 2px;
+	color: rgb(0,0,0);
+	display: block;
+	position: relative;
+	height: 36px;
+	min-width: 64px;
+	padding: 0 8px;
+	display: inline-block;
+	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	line-height: 1;
+	letter-spacing: 0;
+	overflow: hidden;
+	will-change: box-shadow, transform;
+	-webkit-transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+	      transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+	outline: none;
+	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
+	line-height: 36px;
+	vertical-align: middle; }
+	.mdl-button::-moz-focus-inner {
+	border: 0; }
+	.mdl-button:hover {
+	background-color: rgba(158,158,158, 0.20); }
+	.mdl-button:focus:not(:active) {
+	background-color: rgba(0,0,0, 0.12); }
+	.mdl-button:active {
+	background-color: rgba(158,158,158, 0.40); }
+	.mdl-button[disabled][disabled] {
+	color: rgba(0,0,0, 0.26);
+	cursor: auto;
+	background-color: transparent; }
+	.mdl-button.mdl-button--colored {
+	color: rgb(63,81,181); }
+	.mdl-button.mdl-button--colored:focus:not(:active) {
+	  background-color: rgba(0,0,0, 0.12);
+}
+
+/* ==========  $WP-COMMENTS  ========== */
+
+/* ==========  $WP-FOOTER  ========== */
+
+/* ==========  $WP-WORDPRESS-END  ========== */
+
+
 /* Override Styles for Template */
 
 /**
@@ -9961,50 +10071,3 @@ html, body {
 .mdl-demo .mdl-menu__container {
   z-index: 99;
 }
-
-
-/* ==========  $WP-WORDPRESS  ========== */
-
-/* ==========  $WP-HEADER  ========== */
-
-.site-branding .site-title a {
-	color: #fff;
-	font-weight: 400;
-	text-decoration: none;
-}
-
-/* ==========  $WP-NAVIGATION  ========== */
-
-.main-navigation ul {
-	list-style: none;
-	display: inline;
-}
-
-.main-navigation ul li {
-	height: 64px;
-	line-height: 64px;
-	margin: 0;
-	border: none;
-	padding: 0 24px;
-	float: left;
-	position: relative;
-	text-align: center;
-	font-weight: 500;
-	font-size: 14px;
-	text-transform: uppercase;
-}
-
-.main-navigation ul li a {
-	color: rgba(255,255,255,.6);
-	text-decoration: none;
-}
-
-.main-navigation ul li.current-menu-item a {
-	color: #fff;
-}
-
-/* ==========  $WP-CONTENT  ========== */
-
-/* ==========  $WP-COMMENTS  ========== */
-
-/* ==========  $WP-FOOTER  ========== */
