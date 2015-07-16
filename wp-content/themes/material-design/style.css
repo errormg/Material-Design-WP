@@ -9757,9 +9757,17 @@ iframe.heightSet {
 	text-decoration: none;
 }
 
+.updated {
+	display: none;
+}
+
 /* $WP-ENTRY-FOOTER */
 
-.entry-footer .comments-link a {
+.edit-link {
+	float: right;
+}
+
+.entry-footer .comments-link a, .entry-footer .edit-link a, .entry-footer .more-link a {
 	background: transparent;
 	border: none;
 	border-radius: 2px;
@@ -10034,7 +10042,7 @@ html, body {
   margin-bottom: 24px;
 }
 .mdl-demo .mdl-layout__tab-panel:not(#overview) {
-  background-color: white;
+  background-color: inherit;
 }
 .mdl-demo #features section {
   margin-bottom: 72px;

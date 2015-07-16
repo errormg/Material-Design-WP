@@ -150,3 +150,20 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Add Menu Attributes 
+ */
+
+add_filter( 'nav_menu_link_attributes', 'add_menu_classes', 10, 3 );
+function add_menu_classes( $atts, $item, $args )
+{
+  // The ID of the target menu item
+  $menu_target = array(5,7);
+
+  // inspect $item
+  if ($item->ID == $menu_target) {
+    $atts['class'] = 'mdl-layout__tab';
+  }
+  return $atts;
+}

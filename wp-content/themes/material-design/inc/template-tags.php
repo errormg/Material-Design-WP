@@ -117,9 +117,11 @@ function material_design_entry_footer() {
 		}
 	}
 
+	echo '<span class="more-link"><a href="'. get_permalink() .'">Read Article</a>';
+
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		echo '<span class="comments-link">';
-		comments_popup_link( esc_html__( 'Leave a comment', 'material-design' ), esc_html__( '1 Comment', 'material-design' ), esc_html__( '% Comments', 'material-design' ) );
+		comments_popup_link( esc_html__( '(Leave a comment)', 'material-design' ), esc_html__( '(1 Comment)', 'material-design' ), esc_html__( '(% Comments)', 'material-design' ) );
 		echo '</span>';
 	}
 
