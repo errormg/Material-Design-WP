@@ -156,6 +156,8 @@ require get_template_directory() . '/inc/jetpack.php';
  * Currently this doesn't really do anything but add the mdl-layout__tab class to menu items
  */
 
+/* Doesn't really do anything anyway
+
 add_filter( 'nav_menu_link_attributes', 'add_menu_classes', 10, 3 );
 function add_menu_classes( $atts, $item, $args )
 {
@@ -168,3 +170,4 @@ function add_menu_classes( $atts, $item, $args )
   }
   return $atts;
 }
+*/
